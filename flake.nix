@@ -81,22 +81,24 @@
         services.skhd = {
           enable = true;
           skhdConfig = ''
-            cmd + alt + ctrl - z : open -a /Applications/Nix\ Apps/Zed.app
-            cmd + alt + ctrl - t : open -a /Applications/Nix\ Apps/iTerm2.app
-            cmd + alt + ctrl - e : open -a /Applications/Telegram.app
-            cmd + alt + ctrl - w : open -a /Applications/Nix\ Apps/WhatsApp.app
-            cmd + alt + ctrl - s : open -a /Applications/Safari.app
-            cmd + alt + ctrl - l : open -a /Applications/Logic\ Pro.app
-            cmd + alt + ctrl - d : open -a /Applications/Dorico\ 5.app
-            cmd + alt + ctrl - m : open -a /Applications/Spark\ Desktop.app
+            rcmd + rctrl + ralt + rshift - z : open -a /Applications/Nix\ Apps/Zed.app
+            rcmd + rctrl + ralt + rshift - t : open -a /Applications/Nix\ Apps/iTerm2.app
+            rcmd + rctrl + ralt + rshift - e : open -a /Applications/Telegram.app
+            rcmd + rctrl + ralt + rshift - w : open -a /Applications/Nix\ Apps/WhatsApp.app
+            rcmd + rctrl + ralt + rshift - s : open -a /Applications/Safari.app
+            rcmd + rctrl + ralt + rshift - l : open -a /Applications/Logic\ Pro.app
+            rcmd + rctrl + ralt + rshift - d : open -a /Applications/Dorico\ 5.app
+            rcmd + rctrl + ralt + rshift - m : open -a /Applications/Spark\ Desktop.app
 
-            alt - 1 : issw org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography
-            alt - 2 : issw org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography
+            rcmd + rctrl + ralt + rshift - 1 : issw org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography
+            rcmd + rctrl + ralt + rshift - 2 : issw org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography
 
-            cmd + alt + ctrl - 0x1B : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:2560x1664 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0"
-            cmd + alt + ctrl - 0x18 : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1710x1112 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
+            # hyper - +
+            rcmd + rctrl + ralt + rshift - 0x1B : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:2560x1664 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0"
+            rcmd + rctrl + ralt + rshift - 0x18 : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1710x1112 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
 
-            cmd + alt + ctrl - 0x2C : osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
+            # hyper /
+            rcmd + rctrl + ralt + rshift - 0x2C : osascript -e 'tell application "System Events" to tell appearance preference to set dark mode to not dark mode'
           '';
         };
 
