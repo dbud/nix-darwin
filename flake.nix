@@ -35,6 +35,7 @@
           pkgs.tree
           pkgs.cmake
           pkgs.gnupg
+          pkgs.qbittorrent
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -58,6 +59,8 @@
             "font-iosevka-ss05"
             "ilya-birman-typography-layout"
             "telegram"
+            "messenger"
+            "firefox"
           ];
           onActivation = {
             cleanup = "zap";
@@ -80,26 +83,46 @@
 
         services.skhd = {
           enable = true;
-          skhdConfig = ''
-            rcmd + rctrl + ralt + rshift - z : open -a /Applications/Nix\ Apps/Zed.app
-            rcmd + rctrl + ralt + rshift - t : open -a /Applications/Nix\ Apps/iTerm2.app
-            rcmd + rctrl + ralt + rshift - e : open -a /Applications/Telegram.app
-            rcmd + rctrl + ralt + rshift - w : open -a /Applications/Nix\ Apps/WhatsApp.app
-            rcmd + rctrl + ralt + rshift - s : open -a /Applications/Safari.app
-            rcmd + rctrl + ralt + rshift - l : open -a /Applications/Logic\ Pro.app
-            rcmd + rctrl + ralt + rshift - d : open -a /Applications/Dorico\ 5.app
-            rcmd + rctrl + ralt + rshift - m : open -a /Applications/Spark\ Desktop.app
+          skhdConfig = builtins.replaceStrings [ "rhyper" ]
+            [ "rcmd + rctrl + ralt + rshift" ] ''
+              rhyper - z : open -a /Applications/Nix\ Apps/Zed.app
+              rhyper - t : open -a /Applications/Nix\ Apps/iTerm2.app
+              rhyper - e : open -a /Applications/Telegram.app
+              rhyper - w : open -a /Applications/Nix\ Apps/WhatsApp.app
+              rhyper - s : open -a /Applications/Safari.app
+              rhyper - l : open -a /Applications/Logic\ Pro.app
+              rhyper - d : open -a /Applications/Dorico\ 5.app
+              rhyper - m : open -a /Applications/Spark\ Desktop.app
+              rhyper - f : open -a /Applications/Firefox.app
 
-            rcmd + rctrl + ralt + rshift - 1 : issw org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography
-            rcmd + rctrl + ralt + rshift - 2 : issw org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography
+              rhyper - 1 : issw org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography
+              rhyper - 2 : issw org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography
 
-            # hyper - +
-            rcmd + rctrl + ralt + rshift - 0x1B : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:2560x1664 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0"
-            rcmd + rctrl + ralt + rshift - 0x18 : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1710x1112 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
+              # hyper - +
+              rhyper - 0x1B : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:2560x1664 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0"
+              rhyper - 0x18 : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1710x1112 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
 
-            # hyper /
-            rcmd + rctrl + ralt + rshift - 0x2C : osascript -e 'tell application "System Events" to tell appearance preference to set dark mode to not dark mode'
-          '';
+              # hyper /
+              rhyper - 0x2C : osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
+
+              # focus window
+              ctrl + alt - left : yabai -m window --focus west
+              ctrl + alt - right : yabai -m window --focus east
+              ctrl + alt - down : yabai -m window --focus south
+              ctrl + alt - up : yabai -m window --focus north
+
+              # move window
+              ctrl + alt + shift - left : yabai -m window --warp west
+              ctrl + alt + shift - down : yabai -m window --warp south
+              ctrl + alt + shift - up : yabai -m window --warp north
+              ctrl + alt + shift - right : yabai -m window --warp east
+
+              # swap window
+              # shift + alt - left : yabai -m window --swap west
+              # shift + alt - down : yabai -m window --swap south
+              # shift + alt - up : yabai -m window --swap north
+              # shift + alt - right : yabai -m window --swap east
+            '';
         };
 
         system.defaults = {
