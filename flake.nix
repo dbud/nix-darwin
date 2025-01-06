@@ -36,6 +36,7 @@
           pkgs.cmake
           pkgs.gnupg
           pkgs.qbittorrent
+          pkgs.htop
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -61,6 +62,7 @@
             "telegram"
             "messenger"
             "firefox"
+            "stats"
           ];
           onActivation = {
             cleanup = "zap";
@@ -102,8 +104,8 @@
               rhyper - 0x1B : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:2560x1664 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0"
               rhyper - 0x18 : $(brew --prefix)/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1710x1112 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
 
-              # hyper /
-              rhyper - 0x2C : osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
+              # hyper |
+              rhyper - 0x2A : osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
 
               # focus window
               ctrl + alt - left : yabai -m window --focus west
