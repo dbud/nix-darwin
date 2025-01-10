@@ -26,7 +26,6 @@
           pkgs.ffmpeg
           pkgs.gh
           pkgs.bartender
-          # pkgs.telegram-desktop
           pkgs.whatsapp-for-mac
           pkgs.iina
           pkgs.yt-dlp
@@ -37,6 +36,8 @@
           pkgs.gnupg
           pkgs.qbittorrent
           pkgs.htop
+          pkgs.vscode
+          pkgs.lazygit
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -50,10 +51,11 @@
             "AdGuard for Safari" = 1440147259;
             "Amphetamine" = 937984704;
             "Pixelmator Pro" = 1289583905;
+            "HacKit" = 1549557075;
+            "Consent-O-Matic" = 1606897889;
           };
           casks = [
             "chatgpt"
-            "alfred"
             "readdle-spark"
             "karabiner-elements"
             "displaperture"
@@ -63,6 +65,10 @@
             "messenger"
             "firefox"
             "stats"
+            "steam"
+            "fliqlo"
+            "raycast"
+            "jordanbaird-ice"
           ];
           onActivation = {
             cleanup = "zap";
@@ -94,8 +100,9 @@
               rhyper - s : open -a /Applications/Safari.app
               rhyper - l : open -a /Applications/Logic\ Pro.app
               rhyper - d : open -a /Applications/Dorico\ 5.app
-              rhyper - m : open -a /Applications/Spark\ Desktop.app
+              # rhyper - m : open -a /Applications/Spark\ Desktop.app
               rhyper - f : open -a /Applications/Firefox.app
+              rhyper - h : open -a /Applications/HacKit.app
 
               rhyper - 1 : issw org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography
               rhyper - 2 : issw org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography
