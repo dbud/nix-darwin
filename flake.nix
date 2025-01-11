@@ -103,6 +103,7 @@
               # rhyper - m : open -a /Applications/Spark\ Desktop.app
               rhyper - f : open -a /Applications/Firefox.app
               rhyper - h : open -a /Applications/HacKit.app
+              rhyper - c : open -a /Applications/Nix\ Apps/Visual\ Studio\ Code.app
 
               rhyper - 1 : issw org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography
               rhyper - 2 : issw org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography
