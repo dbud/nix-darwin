@@ -14,30 +14,31 @@
       configuration = { pkgs, ... }: {
         nixpkgs.config.allowUnfree = true;
 
-        environment.systemPackages = [
-          pkgs.vim
-          pkgs.zed-editor
-          pkgs.nil
-          pkgs.nixd
-          pkgs.nixfmt-classic
-          pkgs.iterm2
-          # pkgs.karabiner-elements
-          pkgs.skhd
-          pkgs.ffmpeg
-          pkgs.gh
-          pkgs.bartender
-          pkgs.whatsapp-for-mac
-          pkgs.iina
-          pkgs.yt-dlp
-          pkgs.rustup
-          pkgs.deno
-          pkgs.tree
-          pkgs.cmake
-          pkgs.gnupg
-          pkgs.qbittorrent
-          pkgs.htop
-          pkgs.vscode
-          pkgs.lazygit
+        environment.systemPackages = with pkgs; [
+          vim
+          zed-editor
+          nil
+          nixd
+          nixfmt-classic
+          iterm2
+          # karabiner-elements
+          skhd
+          ffmpeg
+          gh
+          bartender
+          whatsapp-for-mac
+          iina
+          yt-dlp
+          rustup
+          deno
+          tree
+          cmake
+          gnupg
+          qbittorrent
+          htop
+          vscode
+          lazygit
+          zsh-history-substring-search
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -69,6 +70,7 @@
             "fliqlo"
             "raycast"
             "jordanbaird-ice"
+            "lunar"
           ];
           onActivation = {
             cleanup = "zap";
@@ -148,6 +150,8 @@
               eval "$(oh-my-posh init zsh --config ~/.config/dbud.omp.toml)"
             fi
           '';
+          interactiveShellInit =
+            "source ${pkgs.zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh";
         };
 
         environment.shellAliases = {
