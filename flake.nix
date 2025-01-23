@@ -21,6 +21,7 @@
           nixd
           nixfmt-classic
           iterm2
+          kitty
           # karabiner-elements
           skhd
           ffmpeg
@@ -39,6 +40,8 @@
           vscode
           lazygit
           zsh-history-substring-search
+          helix
+          tg
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -97,6 +100,7 @@
             [ "rcmd + rctrl + ralt + rshift" ] ''
               rhyper - z : open -a /Applications/Nix\ Apps/Zed.app
               rhyper - t : open -a /Applications/Nix\ Apps/iTerm2.app
+              rhyper - k : open -a /Applications/Nix\ Apps/kitty.app
               rhyper - e : open -a /Applications/Telegram.app
               rhyper - w : open -a /Applications/Nix\ Apps/WhatsApp.app
               rhyper - s : open -a /Applications/Safari.app
@@ -158,6 +162,12 @@
           ls = "ls --color=auto";
           l = "ls -la";
           ".." = "cd ..";
+        };
+
+        environment = {
+          systemPath = [
+            "~/.cargo/bin"
+          ];
         };
 
         security.pam.enableSudoTouchIdAuth = true;
