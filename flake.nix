@@ -57,6 +57,7 @@
             "Pixelmator Pro" = 1289583905;
             "HacKit" = 1549557075;
             "Consent-O-Matic" = 1606897889;
+            "Vimkey" = 1585682577;
           };
           casks = [
             "chatgpt"
