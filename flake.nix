@@ -58,6 +58,7 @@
             "HacKit" = 1549557075;
             "Consent-O-Matic" = 1606897889;
             "Vimkey" = 1585682577;
+            "Xcode" = 497799835;
           };
           casks = [
             "chatgpt"
