@@ -42,6 +42,11 @@
           zsh-history-substring-search
           helix
           tg
+          zig
+          neovim
+          fzf
+          nodejs_23
+          exercism
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -166,11 +171,7 @@
           ".." = "cd ..";
         };
 
-        environment = {
-          systemPath = [
-            "~/.cargo/bin"
-          ];
-        };
+        environment = { systemPath = [ "~/.cargo/bin" ]; };
 
         security.pam.enableSudoTouchIdAuth = true;
 
