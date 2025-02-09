@@ -47,6 +47,7 @@
           fzf
           nodejs_23
           exercism
+          obsidian
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
