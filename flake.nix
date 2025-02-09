@@ -48,6 +48,7 @@
           nodejs_23
           exercism
           obsidian
+          hyperfine
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
