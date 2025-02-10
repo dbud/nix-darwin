@@ -49,6 +49,7 @@
           exercism
           obsidian
           hyperfine
+          ripgrep
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
