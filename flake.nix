@@ -84,6 +84,7 @@
             "raycast"
             "jordanbaird-ice"
             "lunar"
+            "ghostty"
           ];
           onActivation = {
             cleanup = "zap";
