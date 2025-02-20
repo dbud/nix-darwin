@@ -117,7 +117,7 @@
               rhyper - s : open -a /Applications/Safari.app
               rhyper - l : open -a /Applications/Logic\ Pro.app
               rhyper - d : open -a /Applications/Dorico\ 5.app
-              # rhyper - m : open -a /Applications/Spark\ Desktop.app
+              rhyper - m : open -a /System/Applications/Music.app  
               rhyper - f : open -a /Applications/Firefox.app
               rhyper - h : open -a /Applications/HacKit.app
               rhyper - c : open -a /Applications/Nix\ Apps/Visual\ Studio\ Code.app
@@ -179,7 +179,6 @@
 
         security.pam.enableSudoTouchIdAuth = true;
 
-        services.nix-daemon.enable = true;
         nix.settings.experimental-features = "nix-command flakes";
         system.configurationRevision = self.rev or self.dirtyRev or null;
         system.stateVersion = 5;
