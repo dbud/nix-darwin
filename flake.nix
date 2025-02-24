@@ -85,6 +85,8 @@
             "jordanbaird-ice"
             "lunar"
             "ghostty"
+            "wolfram-engine"
+            "wljs-notebook"
           ];
           onActivation = {
             cleanup = "zap";
