@@ -47,10 +47,10 @@
           fzf
           nodejs_23
           exercism
-          obsidian
           hyperfine
           ripgrep
           warp-terminal
+          libressl
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -67,7 +67,7 @@
             "HacKit" = 1549557075;
             "Consent-O-Matic" = 1606897889;
             "Vimkey" = 1585682577;
-            "Xcode" = 497799835;
+            # "Xcode" = 497799835;
           };
           casks = [
             "chatgpt"
@@ -178,7 +178,8 @@
           ".." = "cd ..";
         };
 
-        environment = { systemPath = [ "~/.cargo/bin" ]; };
+        environment.systemPath =
+          [ "~/.cargo/bin" "~/.local/share/ponyup/bin/" ];
 
         security.pam.services.sudo_local.touchIdAuth = true;
 
