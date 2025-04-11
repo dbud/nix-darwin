@@ -51,6 +51,9 @@
           ripgrep
           warp-terminal
           libressl
+          offpunk
+          amfora
+          lagrange
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -86,7 +89,7 @@
             "jordanbaird-ice"
             "lunar"
             "ghostty"
-            "wolfram-engine"
+            # "wolfram-engine"
             "wljs-notebook"
           ];
           onActivation = {
@@ -124,6 +127,7 @@
               rhyper - f : open -a /Applications/Firefox.app
               rhyper - h : open -a /Applications/HacKit.app
               rhyper - c : open -a /Applications/Nix\ Apps/Visual\ Studio\ Code.app
+              rhyper - i : open -a /Applications/Nix\ Apps/IINA.app
 
               rhyper - 1 : issw org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography
               rhyper - 2 : issw org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography
