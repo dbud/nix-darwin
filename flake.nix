@@ -54,6 +54,7 @@
           offpunk
           amfora
           lagrange
+          firefox
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -81,7 +82,6 @@
             "ilya-birman-typography-layout"
             "telegram"
             "messenger"
-            "firefox"
             "stats"
             "steam"
             "fliqlo"
@@ -128,6 +128,7 @@
               rhyper - h : open -a /Applications/HacKit.app
               rhyper - c : open -a /Applications/Nix\ Apps/Visual\ Studio\ Code.app
               rhyper - i : open -a /Applications/Nix\ Apps/IINA.app
+              rhyper - p : open -a /Applications/Pixelmator\ Pro.app
 
               rhyper - 1 : issw org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography
               rhyper - 2 : issw org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography
