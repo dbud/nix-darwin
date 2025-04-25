@@ -55,6 +55,7 @@
           amfora
           lagrange
           firefox
+          telegram-desktop
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -116,9 +117,9 @@
           skhdConfig = builtins.replaceStrings [ "rhyper" ]
             [ "rcmd + rctrl + ralt + rshift" ] ''
               rhyper - z : open -a /Applications/Nix\ Apps/Zed.app
-              rhyper - t : open -a /Applications/Nix\ Apps/iTerm2.app
               rhyper - k : open -a /Applications/Nix\ Apps/kitty.app
-              rhyper - e : open -a /Applications/Telegram.app
+              rhyper - e : open -a /Applications/Nix\ Apps/Telegram.app
+              rhyper - t : open -a /Applications/Telegram.app
               rhyper - w : open -a /Applications/Nix\ Apps/WhatsApp.app
               rhyper - s : open -a /Applications/Safari.app
               rhyper - l : open -a /Applications/Logic\ Pro.app
