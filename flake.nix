@@ -56,6 +56,9 @@
           lagrange
           firefox
           telegram-desktop
+          just
+          pkg-config
+          openssl
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -91,7 +94,7 @@
             "lunar"
             "ghostty"
             # "wolfram-engine"
-            "wljs-notebook"
+            # "wljs-notebook"
           ];
           onActivation = {
             cleanup = "zap";
@@ -183,6 +186,9 @@
           l = "ls -la";
           ".." = "cd ..";
         };
+
+        environment.variables.PKG_CONFIG_PATH =
+          "${pkgs.openssl.dev}/lib/pkgconfig:${pkgs.libressl.dev}/lib/pkgconfig";
 
         environment.systemPath =
           [ "~/.cargo/bin" "~/.local/share/ponyup/bin/" ];
