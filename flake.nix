@@ -15,50 +15,49 @@
         nixpkgs.config.allowUnfree = true;
 
         environment.systemPackages = with pkgs; [
+          skhd
+          kitty
+          neovim
           vim
           zed-editor
-          nil
-          nixd
-          nixfmt-classic
-          iterm2
-          kitty
-          # karabiner-elements
-          skhd
-          ffmpeg
-          gh
-          bartender
-          whatsapp-for-mac
-          iina
-          yt-dlp
-          rustup
-          deno
-          tree
-          cmake
-          gnupg
-          qbittorrent
-          htop
           vscode
           lazygit
-          zsh-history-substring-search
-          helix
-          tg
+
+          nodejs_24
+          deno
           zig
-          neovim
-          fzf
-          nodejs_23
-          exercism
-          hyperfine
-          ripgrep
-          warp-terminal
-          libressl
-          offpunk
-          amfora
-          lagrange
-          firefox
-          telegram-desktop
+          rustup
+
           just
           pkg-config
           openssl
+          fzf
+          cmake
+          tree
+          htop
+          gnupg
+          gh
+          hyperfine
+          ripgrep
+          libressl
+
+          nil
+          nixd
+          nixfmt-classic
+
+          firefox
+          ffmpeg
+          iina
+          yt-dlp
+          qbittorrent
+          whatsapp-for-mac
+          telegram-desktop
+
+          zsh-history-substring-search
+
+          offpunk
+          amfora
+          lagrange
         ];
 
         fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
@@ -84,7 +83,7 @@
             "displaperture"
             "font-iosevka-ss05"
             "ilya-birman-typography-layout"
-            "telegram"
+            # "telegram"
             "messenger"
             "stats"
             "steam"
@@ -92,7 +91,7 @@
             "raycast"
             "jordanbaird-ice"
             "lunar"
-            "ghostty"
+            # "ghostty"
             # "wolfram-engine"
             # "wljs-notebook"
           ];
@@ -127,7 +126,7 @@
               rhyper - s : open -a /Applications/Safari.app
               rhyper - l : open -a /Applications/Logic\ Pro.app
               rhyper - d : open -a /Applications/Dorico\ 5.app
-              rhyper - m : open -a /System/Applications/Music.app  
+              rhyper - m : open -a /System/Applications/Music.app
               rhyper - f : open -a /Applications/Firefox.app
               rhyper - h : open -a /Applications/HacKit.app
               rhyper - c : open -a /Applications/Nix\ Apps/Visual\ Studio\ Code.app
@@ -185,6 +184,7 @@
           ls = "ls --color=auto";
           l = "ls -la";
           ".." = "cd ..";
+          "reflake" = "darwin-rebuild switch --flake ~/.config/nix-darwin -v";
         };
 
         environment.variables.PKG_CONFIG_PATH =
