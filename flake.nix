@@ -40,7 +40,6 @@
           hyperfine
           ripgrep
           libressl
-
           nil
           nixd
           nixfmt-classic
@@ -50,7 +49,6 @@
           iina
           yt-dlp
           qbittorrent
-          whatsapp-for-mac
           telegram-desktop
 
           zsh-history-substring-search
@@ -74,6 +72,7 @@
             "HacKit" = 1549557075;
             "Consent-O-Matic" = 1606897889;
             "Vimkey" = 1585682577;
+            "WhatsApp Messenger" = 310633997;
             # "Xcode" = 497799835;
           };
           casks = [
@@ -122,7 +121,7 @@
               rhyper - k : open -a /Applications/Nix\ Apps/kitty.app
               rhyper - e : open -a /Applications/Nix\ Apps/Telegram.app
               rhyper - t : open -a /Applications/Telegram.app
-              rhyper - w : open -a /Applications/Nix\ Apps/WhatsApp.app
+              rhyper - w : open -a /Applications/WhatsApp.app
               rhyper - s : open -a /Applications/Safari.app
               rhyper - l : open -a /Applications/Logic\ Pro.app
               rhyper - d : open -a /Applications/Dorico\ 5.app
@@ -185,6 +184,8 @@
           l = "ls -la";
           ".." = "cd ..";
           "reflake" = "darwin-rebuild switch --flake ~/.config/nix-darwin -v";
+          "nix-clean" =
+            "sudo nix-collect-garbage -d && nix-collect-garbage -d && nix-store --gc";
         };
 
         environment.variables.PKG_CONFIG_PATH =
