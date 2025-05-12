@@ -183,6 +183,7 @@
           ls = "ls --color=auto";
           l = "ls -la";
           ".." = "cd ..";
+          "upflake" = "(cd ~/.config/nix-darwin && nix flake update)";
           "reflake" = "darwin-rebuild switch --flake ~/.config/nix-darwin -v";
           "nix-clean" =
             "sudo nix-collect-garbage -d && nix-collect-garbage -d && nix-store --gc";
