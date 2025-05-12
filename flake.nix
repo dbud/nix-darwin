@@ -22,6 +22,7 @@
           zed-editor
           vscode
           lazygit
+          yazi
 
           nodejs_24
           deno
@@ -177,6 +178,16 @@
           '';
           interactiveShellInit =
             "source ${pkgs.zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh";
+          shellInit = ''
+            function y() {
+            	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+            	yazi "$@" --cwd-file="$tmp"
+            	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+            		builtin cd -- "$cwd"
+            	fi
+            	rm -f -- "$tmp"
+            }
+          '';
         };
 
         environment.shellAliases = {
