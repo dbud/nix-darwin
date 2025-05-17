@@ -41,6 +41,7 @@
           hyperfine
           ripgrep
           libressl
+          nvd
           nil
           nixd
           nixfmt-classic
@@ -163,6 +164,8 @@
             '';
         };
 
+        system.primaryUser = "dbud";
+
         system.defaults = {
           dock.autohide = true;
           WindowManager.StandardHideDesktopIcons = true;
@@ -195,9 +198,11 @@
           l = "ls -la";
           ".." = "cd ..";
           "upflake" = "(cd ~/.config/nix-darwin && nix flake update)";
-          "reflake" = "darwin-rebuild switch --flake ~/.config/nix-darwin -v";
+          "reflake" =
+            "sudo darwin-rebuild switch --flake ~/.config/nix-darwin -v";
           "nix-clean" =
             "sudo nix-collect-garbage -d && nix-collect-garbage -d && nix-store --gc";
+          "z" = "zeditor";
         };
 
         environment.variables.PKG_CONFIG_PATH =
