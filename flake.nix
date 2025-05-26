@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     mac-app-util.url = "github:hraban/mac-app-util";
   };
 
@@ -52,6 +52,7 @@
           yt-dlp
           qbittorrent
           telegram-desktop
+          totp-cli
 
           zsh-history-substring-search
 
