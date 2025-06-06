@@ -8,6 +8,7 @@
     vscode
     lazygit
     yazi
+    direnv
 
     nodejs_24
     deno
@@ -15,6 +16,7 @@
     rustup
 
     just
+    bat
     pkg-config
     openssl
     fzf
