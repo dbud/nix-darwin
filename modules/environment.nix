@@ -8,6 +8,7 @@
     "nix-clean" =
       "sudo nix-collect-garbage -d && nix-collect-garbage -d && nix-store --gc";
     z = "zeditor";
+    nq = "networkQuality";
   };
 
   environment.variables = {
