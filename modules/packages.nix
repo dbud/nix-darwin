@@ -43,7 +43,6 @@
 
     zsh-history-substring-search
 
-    offpunk
     amfora
     lagrange
   ];
