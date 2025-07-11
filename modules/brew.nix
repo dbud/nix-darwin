@@ -21,7 +21,7 @@
       "displaperture"
       "font-iosevka-ss05"
       "ilya-birman-typography-layout"
-      # "telegram"
+      "telegram"
       "messenger"
       "stats"
       "steam"

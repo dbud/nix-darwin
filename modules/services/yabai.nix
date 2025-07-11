@@ -1,6 +1,6 @@
 {
   services.yabai = {
-    enable = true;
+    enable = false; # until updated for macOS 26
     config = {
       layout = "bsp";
       top_padding = 10;

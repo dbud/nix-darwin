@@ -10,7 +10,7 @@
     yazi
     direnv
 
-    nodejs_24
+    # nodejs_24
     deno
     zig
     rustup
@@ -38,7 +38,7 @@
     iina
     yt-dlp
     qbittorrent
-    telegram-desktop
+    # telegram-desktop
     totp-cli
 
     zsh-history-substring-search
