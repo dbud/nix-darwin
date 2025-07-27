@@ -1,8 +1,15 @@
 {
   homebrew = {
     enable = true;
-    brews = [ "mas" "displayplacer" "jandedobbeleer/oh-my-posh/oh-my-posh" ];
-    taps = [ "jandedobbeleer/oh-my-posh" ];
+    brews = [
+      "mas"
+      "displayplacer"
+      "jandedobbeleer/oh-my-posh/oh-my-posh"
+      "elixir"
+      "node"
+      # "jank-lang/jank/jank"
+    ];
+    taps = [ "jandedobbeleer/oh-my-posh" "jank-lang/jank" ];
     masApps = {
       "AdGuard for Safari" = 1440147259;
       "Amphetamine" = 937984704;
