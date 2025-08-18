@@ -10,7 +10,8 @@
     yazi
     direnv
 
-    # nodejs_24
+    # nodejs_24 # use brew
+    opam
     deno
     zig
     rustup

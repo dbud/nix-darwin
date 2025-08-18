@@ -7,7 +7,6 @@
       "jandedobbeleer/oh-my-posh/oh-my-posh"
       "elixir"
       "node"
-      # "jank-lang/jank/jank"
     ];
     taps = [ "jandedobbeleer/oh-my-posh" "jank-lang/jank" ];
     masApps = {
@@ -20,6 +19,7 @@
       "WhatsApp Messenger" = 310633997;
       # "Spark" = 6445813049;
       # "Xcode" = 497799835;
+      # "Organic Maps: GPS navigation" = 1567437057;
     };
     casks = [
       "chatgpt"
