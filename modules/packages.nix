@@ -4,11 +4,12 @@
     kitty
     neovim
     vim
-    zed-editor
+    # zed-editor
     vscode
     lazygit
     yazi
     direnv
+    fd
 
     # nodejs_24 # use brew
     opam

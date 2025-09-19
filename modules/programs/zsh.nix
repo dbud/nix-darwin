@@ -4,6 +4,7 @@
     enableSyntaxHighlighting = true;
     promptInit = ''
       if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+        export PATH="/opt/homebrew/bin:$PATH"
         eval "$(oh-my-posh init zsh --config ~/.config/dbud.omp.toml)"
       fi
       eval "$(direnv hook zsh)"
