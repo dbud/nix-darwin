@@ -36,6 +36,7 @@
       "raycast"
       "jordanbaird-ice"
       "lunar"
+      "rio"
       # "ghostty"
       # "wolfram-engine"
       # "wljs-notebook"
