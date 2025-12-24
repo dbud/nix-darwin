@@ -1,10 +1,11 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     skhd
-    kitty
+    # kitty
+    rio
     neovim
     vim
-    # zed-editor
+    # zed-editor # slow updates
     vscode
     lazygit
     yazi
@@ -18,7 +19,6 @@
     rustup
 
     just
-    bat
     pkg-config
     openssl
     fzf
@@ -28,20 +28,23 @@
     gnupg
     gh
     hyperfine
+    dust
+    lsd
+    duf
     ripgrep
-    libressl
+    # libressl
     nvd
     nil
     nixd
     nixfmt-classic
 
-    firefox
+    # firefox # use brew
     ffmpeg
     iina
     yt-dlp
-    qbittorrent
+    # qbittorrent
     # telegram-desktop
-    totp-cli
+    # totp-cli
 
     zsh-history-substring-search
 
@@ -49,5 +52,5 @@
     lagrange
   ];
 
-  fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
+  # fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
 }

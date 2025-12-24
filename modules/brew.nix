@@ -36,10 +36,11 @@
       "raycast"
       "jordanbaird-ice"
       "lunar"
-      "rio"
       # "ghostty"
       # "wolfram-engine"
       # "wljs-notebook"
+      "firefox"
+      "font-zed-mono-nerd-font"
     ];
     onActivation = {
       cleanup = "zap";
