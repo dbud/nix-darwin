@@ -1,4 +1,5 @@
-{ self, ... }: {
+{ self, ... }:
+{
   imports = [
     ./modules/packages.nix
     ./modules/brew.nix

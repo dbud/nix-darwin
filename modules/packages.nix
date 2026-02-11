@@ -1,7 +1,7 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   environment.systemPackages = with pkgs; [
     skhd
-    # kitty
     rio
     neovim
     vim
@@ -11,6 +11,8 @@
     yazi
     direnv
     fd
+    gettext
+    xdg-utils
 
     # nodejs_24 # use brew
     opam
@@ -23,6 +25,7 @@
     openssl
     fzf
     cmake
+    ninja
     tree
     htop
     gnupg
@@ -32,11 +35,10 @@
     lsd
     duf
     ripgrep
-    # libressl
     nvd
     nil
     nixd
-    nixfmt-classic
+    nixfmt
 
     # firefox # use brew
     ffmpeg

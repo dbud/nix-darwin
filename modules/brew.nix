@@ -8,7 +8,10 @@
       "elixir"
       "node"
     ];
-    taps = [ "jandedobbeleer/oh-my-posh" "jank-lang/jank" ];
+    taps = [
+      "jandedobbeleer/oh-my-posh"
+      "jank-lang/jank"
+    ];
     masApps = {
       "AdGuard for Safari" = 1440147259;
       "Amphetamine" = 937984704;

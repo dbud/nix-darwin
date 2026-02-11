@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   programs.zsh = {
     enable = true;
     enableSyntaxHighlighting = true;
@@ -12,8 +13,7 @@
         cd "$HOME"
       fi
     '';
-    interactiveShellInit =
-      "source ${pkgs.zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh";
+    interactiveShellInit = "source ${pkgs.zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh";
     shellInit = builtins.readFile ./shell-init.sh;
   };
 }
