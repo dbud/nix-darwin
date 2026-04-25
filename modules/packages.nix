@@ -2,23 +2,21 @@
 {
   environment.systemPackages = with pkgs; [
     skhd
-    rio
     neovim
     vim
-    # zed-editor # slow updates
     vscode
     lazygit
     yazi
-    direnv
     fd
     gettext
     xdg-utils
 
-    # nodejs_24 # use brew
     opam
     deno
     zig
     rustup
+    python314
+    python3Packages.pip
 
     just
     pkg-config
@@ -39,8 +37,8 @@
     nil
     nixd
     nixfmt
+    timg
 
-    # firefox # use brew
     ffmpeg
     iina
     yt-dlp
@@ -50,8 +48,7 @@
 
     zsh-history-substring-search
 
-    amfora
-    lagrange
+    maple-mono.NF
   ];
 
   # fonts.packages = [ pkgs.nerd-fonts.zed-mono ];

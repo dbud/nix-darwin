@@ -13,13 +13,13 @@
       "jank-lang/jank"
     ];
     masApps = {
-      "AdGuard for Safari" = 1440147259;
-      "Amphetamine" = 937984704;
-      "Pixelmator Pro" = 1289583905;
-      "HacKit" = 1549557075;
-      "Consent-O-Matic" = 1606897889;
-      "Vimkey" = 1585682577;
-      "WhatsApp Messenger" = 310633997;
+      # "AdGuard for Safari" = 1440147259;
+      # "Amphetamine" = 937984704;
+      # "Pixelmator Pro" = 1289583905;
+      # "HacKit" = 1549557075;
+      # "Consent-O-Matic" = 1606897889;
+      # "Vimkey" = 1585682577;
+      # "WhatsApp Messenger" = 310633997;
       # "Spark" = 6445813049;
       # "Xcode" = 497799835;
       # "Organic Maps: GPS navigation" = 1567437057;
@@ -39,11 +39,14 @@
       "raycast"
       "jordanbaird-ice"
       "lunar"
-      # "ghostty"
+      "ghostty"
       # "wolfram-engine"
       # "wljs-notebook"
       "firefox"
       "font-zed-mono-nerd-font"
+      "font-maple-mono-nf"
+      "rio"
+      "android-studio"
     ];
     onActivation = {
       cleanup = "zap";

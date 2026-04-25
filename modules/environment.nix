@@ -12,10 +12,7 @@
 
   environment.variables = {
     PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig:${pkgs.libressl.dev}/lib/pkgconfig";
+    LANG = "en_US.UTF-8";
+    TERM = "xterm-256color";
   };
-
-  environment.systemPath = [
-    "~/.cargo/bin"
-    "~/Library/Python/3.9/bin"
-  ];
 }
