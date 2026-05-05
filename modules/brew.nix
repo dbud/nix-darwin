@@ -7,6 +7,7 @@
       "jandedobbeleer/oh-my-posh/oh-my-posh"
       "elixir"
       "node"
+      "apfel"
     ];
     taps = [
       "jandedobbeleer/oh-my-posh"
@@ -47,6 +48,7 @@
       "font-maple-mono-nf"
       "rio"
       "android-studio"
+      "spotify"
     ];
     onActivation = {
       cleanup = "zap";
