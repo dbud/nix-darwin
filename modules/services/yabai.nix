@@ -13,6 +13,7 @@
       yabai -m rule --add app="^System Settings$" manage=off
       yabai -m rule --add app="^Finder$" manage=off
       yabai -m rule --add app="^java$" manage=off
+      yabai -m rule --add app="^LuLu$" manage=off
     '';
   };
 }
