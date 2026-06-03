@@ -8,6 +8,8 @@
       "elixir"
       "node"
       "apfel"
+      "fontforge"
+      "deno"
     ];
     taps = [
       "jandedobbeleer/oh-my-posh"
@@ -49,6 +51,9 @@
       "rio"
       "android-studio"
       "spotify"
+      "font-alegreya"
+      "basictex"
+      "gitup-app"
     ];
     onActivation = {
       cleanup = "zap";

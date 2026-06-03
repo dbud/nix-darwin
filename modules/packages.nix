@@ -12,7 +12,6 @@
     xdg-utils
 
     opam
-    deno
     zig
     rustup
     python314
@@ -42,14 +41,10 @@
     ffmpeg
     iina
     yt-dlp
-    # qbittorrent
-    # telegram-desktop
-    # totp-cli
 
     zsh-history-substring-search
 
     maple-mono.NF
+    alegreya
   ];
-
-  # fonts.packages = [ pkgs.nerd-fonts.zed-mono ];
 }
