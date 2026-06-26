@@ -6,7 +6,7 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
-    mac-app-util.url = "github:hraban/mac-app-util";
+    # mac-app-util.url = "github:hraban/mac-app-util";
   };
 
   outputs =
@@ -14,7 +14,7 @@
       self,
       nix-darwin,
       nix-homebrew,
-      mac-app-util,
+      # mac-app-util,
       ...
     }:
     {
@@ -22,7 +22,7 @@
         modules = [
           ({ pkgs, ... }: import ./configuration.nix { inherit self pkgs; })
           nix-homebrew.darwinModules.nix-homebrew
-          mac-app-util.darwinModules.default
+          # mac-app-util.darwinModules.default
         ];
       };
     };

@@ -4,7 +4,7 @@
     skhd
     neovim
     vim
-    vscode
+    # vscode
     lazygit
     yazi
     fd
@@ -39,7 +39,7 @@
     timg
 
     ffmpeg
-    iina
+    # iina
     yt-dlp
 
     zsh-history-substring-search

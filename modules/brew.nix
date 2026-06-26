@@ -8,12 +8,10 @@
       "elixir"
       "node"
       "apfel"
-      "fontforge"
       "deno"
     ];
     taps = [
       "jandedobbeleer/oh-my-posh"
-      "jank-lang/jank"
     ];
     masApps = {
       # "AdGuard for Safari" = 1440147259;
@@ -35,7 +33,7 @@
       "font-iosevka-ss05"
       "ilya-birman-typography-layout"
       "telegram"
-      "messenger"
+      # "messenger"
       "stats"
       "steam"
       "fliqlo"
@@ -51,9 +49,9 @@
       "rio"
       "android-studio"
       "spotify"
-      "font-alegreya"
       "basictex"
       "gitup-app"
+      "thaw@beta"
     ];
     onActivation = {
       cleanup = "zap";
