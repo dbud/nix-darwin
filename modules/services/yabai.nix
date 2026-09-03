@@ -3,11 +3,11 @@
     enable = true; # until updated for macOS 26
     config = {
       layout = "bsp";
-      top_padding = 10;
-      bottom_padding = 10;
-      left_padding = 10;
-      right_padding = 10;
-      window_gap = 10;
+      top_padding = 16;
+      bottom_padding = 16;
+      left_padding = 16;
+      right_padding = 16;
+      window_gap = 16;
     };
     extraConfig = ''
       yabai -m rule --add app="^System Settings$" manage=off

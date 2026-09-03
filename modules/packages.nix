@@ -4,7 +4,6 @@
     skhd
     neovim
     vim
-    # vscode
     lazygit
     yazi
     fd
@@ -16,6 +15,7 @@
     rustup
     python314
     python3Packages.pip
+    go
 
     just
     pkg-config
@@ -39,7 +39,6 @@
     timg
 
     ffmpeg
-    # iina
     yt-dlp
 
     zsh-history-substring-search
