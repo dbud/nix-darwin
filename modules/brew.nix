@@ -32,13 +32,14 @@
       "google-chrome"
       "font-zed-mono-nerd-font"
       "font-maple-mono-nf"
-      "rio"
+      # "rio"
       "android-studio"
       "spotify"
       "basictex"
       "gitup-app"
       "thaw@beta"
       "lulu"
+      "linear"
     ];
     onActivation = {
       cleanup = "zap";
