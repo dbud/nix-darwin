@@ -5,6 +5,7 @@
     ./modules/brew.nix
     ./modules/services/yabai.nix
     ./modules/services/skhd.nix
+    ./modules/services/jankyborders.nix
     ./modules/programs/zsh.nix
     ./modules/environment.nix
     ./modules/system.nix
