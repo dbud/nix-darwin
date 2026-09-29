@@ -1,0 +1,18 @@
+# Managed by nix-darwin. Edit modules/home/zshrc in the nix-darwin repo, not this
+# file: changes made here are lost on the next activation.
+
+# PATH entries from home.sessionPath, plus the other home.sessionVariables.
+# The path is Home Manager's home.profileDirectory, which tracks the user named
+# by system.primaryUser in configuration.nix.
+if [ -f /etc/profiles/per-user/dbud/etc/profile.d/hm-session-vars.sh ]; then
+  source /etc/profiles/per-user/dbud/etc/profile.d/hm-session-vars.sh
+fi
+
+export LC_ALL="en_US.UTF-8"
+
+# opam, which also sets up completion for the opam binary
+if [[ -r "$HOME/.opam/opam-init/init.zsh" ]]; then
+  source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
+fi
+
+bindkey '^[[3~' delete-char
