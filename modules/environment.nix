@@ -8,6 +8,7 @@
     reflake = "sudo darwin-rebuild switch --flake ~/.config/nix-darwin -v $@";
     "nix-clean" = "sudo nix-collect-garbage -d && nix-collect-garbage -d && nix-store --gc";
     nq = "networkQuality";
+    nix-releases = "${pkgs.writeShellScriptBin "nix-releases" (builtins.readFile ./programs/nix-releases.sh)}/bin/nix-releases";
   };
 
   environment.variables = {
