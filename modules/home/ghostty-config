@@ -7,3 +7,5 @@ font-size = 14
 adjust-cell-height = 30%
 
 theme = light:Light Owl,dark:Catppuccin Frappe
+
+config-file = ?~/.config/ghostty/scratch
