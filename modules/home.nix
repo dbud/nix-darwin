@@ -27,6 +27,7 @@
       home.file = {
         ".zshrc".source = ./home/zshrc;
         ".config/ghostty/config".source = ./home/ghostty-config;
+        ".config/starship.toml".source = ./home/starship.toml;
       };
     };
 }
