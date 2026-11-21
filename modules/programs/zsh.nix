@@ -6,7 +6,7 @@
     promptInit = ''
       if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
         export PATH="/opt/homebrew/bin:$PATH"
-        eval "$(oh-my-posh init zsh --config ~/.config/dbud.omp.toml)"
+        eval "$(${pkgs.starship}/bin/starship init zsh)"
       fi
       # eval "$(direnv hook zsh)"
       if [ "$PWD" = "/" ]; then

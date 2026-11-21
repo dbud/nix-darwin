@@ -4,17 +4,11 @@
     brews = [
       "mas"
       "displayplacer"
-      "jandedobbeleer/oh-my-posh/oh-my-posh"
       "elixir"
       "node"
-      "apfel"
-      "deno"
     ];
-    taps = [
-      "jandedobbeleer/oh-my-posh"
-    ];
+    taps = [ ];
     casks = [
-      "chatgpt"
       "readdle-spark"
       "karabiner-elements"
       "displaperture"
@@ -26,20 +20,17 @@
       "fliqlo"
       "raycast"
       "ghostty"
-      # "wolfram-engine"
-      # "wljs-notebook"
       "firefox"
       "google-chrome"
       "font-zed-mono-nerd-font"
       "font-maple-mono-nf"
-      # "rio"
       "android-studio"
       "spotify"
       "basictex"
-      "gitup-app"
       "thaw@beta"
       "lulu"
       "linear"
+      "claude-code"
     ];
     onActivation = {
       cleanup = "zap";

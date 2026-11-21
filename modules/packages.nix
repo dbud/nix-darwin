@@ -42,8 +42,8 @@
     yt-dlp
 
     zsh-history-substring-search
+    starship
 
     maple-mono.NF
-    alegreya
   ];
 }
