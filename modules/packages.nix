@@ -44,6 +44,5 @@
     zsh-history-substring-search
     starship
 
-    maple-mono.NF
   ];
 }
